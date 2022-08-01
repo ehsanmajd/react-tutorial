@@ -3,6 +3,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Breweries from "./pages/Breweries";
 import Home from './pages/Home';
 import List from "./pages/List";
 
@@ -15,6 +16,7 @@ function App() {
             renders the first one that matches the current URL. */}
         <Routes>
           <Route path="/list" element={<List />} />
+          <Route path="/fruits" element={<Breweries />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
